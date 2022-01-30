@@ -1,0 +1,140 @@
+I, [2022-01-30T20:43:16.095752 #23960]  INFO -- : Registered expected interaction GET /videos
+D, [2022-01-30T20:43:16.096754 #23960] DEBUG -- : {
+  "description": "a request for video list",
+  "providerState": "get video list successfully",
+  "request": {
+    "method": "GET",
+    "path": "/videos"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "body": {
+      "data": {
+        "json_class": "Pact::ArrayLike",
+        "contents": {
+          "id": {
+            "json_class": "Pact::SomethingLike",
+            "contents": 1
+          },
+          "videoAddress": {
+            "json_class": "Pact::SomethingLike",
+            "contents": "https://www.youtube.com/watch?v=FXpIoQ_rT_c"
+          },
+          "coverImage": {
+            "json_class": "Pact::SomethingLike",
+            "contents": "https://raw.githubusercontent.com/modanisa/bootcamp-video-db/main/video-images/1-cover.webp"
+          },
+          "hoverImage": {
+            "json_class": "Pact::SomethingLike",
+            "contents": "https://raw.githubusercontent.com/modanisa/bootcamp-video-db/main/video-images/1-hover.webp"
+          },
+          "title": {
+            "json_class": "Pact::SomethingLike",
+            "contents": "Vue.js Course for Beginners [2021 Tutorial]"
+          },
+          "viewCount": {
+            "json_class": "Pact::SomethingLike",
+            "contents": 254
+          },
+          "publishDateInMonth": {
+            "json_class": "Pact::SomethingLike",
+            "contents": 4
+          },
+          "ownerImage": {
+            "json_class": "Pact::SomethingLike",
+            "contents": "https://yt3.ggpht.com/ytc/AKedOLTtJvQ1Vfew91vemeLaLdhjOwGx3tTBLlreK_QUyA=s68-c-k-c0x00ffffff-no-rj"
+          },
+          "ownerName": {
+            "json_class": "Pact::SomethingLike",
+            "contents": "freeCodeCamp.org"
+          },
+          "description": {
+            "json_class": "Pact::SomethingLike",
+            "contents": "Learn Vue 3 by in this full course. Vue.js is an open-source model–view–view model front end JavaScript framework for building user interfaces and single-page applications."
+          }
+        },
+        "min": 1
+      }
+    }
+  },
+  "metadata": null
+}
+I, [2022-01-30T20:43:16.111767 #23960]  INFO -- : Received request GET /videos
+D, [2022-01-30T20:43:16.111767 #23960] DEBUG -- : {
+  "path": "/videos",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "User-Agent": "axios/0.25.0",
+    "Host": "127.0.0.1:50627",
+    "Connection": "close",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2022-01-30T20:43:16.111767 #23960]  INFO -- : Found matching response for GET /videos
+D, [2022-01-30T20:43:16.112768 #23960] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=UTF-8"
+  },
+  "body": {
+    "data": {
+      "json_class": "Pact::ArrayLike",
+      "contents": {
+        "id": {
+          "json_class": "Pact::SomethingLike",
+          "contents": 1
+        },
+        "videoAddress": {
+          "json_class": "Pact::SomethingLike",
+          "contents": "https://www.youtube.com/watch?v=FXpIoQ_rT_c"
+        },
+        "coverImage": {
+          "json_class": "Pact::SomethingLike",
+          "contents": "https://raw.githubusercontent.com/modanisa/bootcamp-video-db/main/video-images/1-cover.webp"
+        },
+        "hoverImage": {
+          "json_class": "Pact::SomethingLike",
+          "contents": "https://raw.githubusercontent.com/modanisa/bootcamp-video-db/main/video-images/1-hover.webp"
+        },
+        "title": {
+          "json_class": "Pact::SomethingLike",
+          "contents": "Vue.js Course for Beginners [2021 Tutorial]"
+        },
+        "viewCount": {
+          "json_class": "Pact::SomethingLike",
+          "contents": 254
+        },
+        "publishDateInMonth": {
+          "json_class": "Pact::SomethingLike",
+          "contents": 4
+        },
+        "ownerImage": {
+          "json_class": "Pact::SomethingLike",
+          "contents": "https://yt3.ggpht.com/ytc/AKedOLTtJvQ1Vfew91vemeLaLdhjOwGx3tTBLlreK_QUyA=s68-c-k-c0x00ffffff-no-rj"
+        },
+        "ownerName": {
+          "json_class": "Pact::SomethingLike",
+          "contents": "freeCodeCamp.org"
+        },
+        "description": {
+          "json_class": "Pact::SomethingLike",
+          "contents": "Learn Vue 3 by in this full course. Vue.js is an open-source model–view–view model front end JavaScript framework for building user interfaces and single-page applications."
+        }
+      },
+      "min": 1
+    }
+  }
+}
+I, [2022-01-30T20:43:16.127783 #23960]  INFO -- : Verifying - interactions matched
+I, [2022-01-30T20:43:16.143797 #23960]  INFO -- : Cleared interactions
+I, [2022-01-30T20:43:16.159811 #23960]  INFO -- : Updating pact for Backend at C:/Users/sclad/Desktop/x/vue-app/pact/pacts/frontend-backend.json
+I, [2022-01-30T20:43:16.160812 #23960]  INFO -- : *****************************************************************************
+I, [2022-01-30T20:43:16.160812 #23960]  INFO -- : Updating existing file .C:/Users/sclad/Desktop/x/vue-app/pact/pacts/frontend-backend.json as pactfile_write_mode is :update
+I, [2022-01-30T20:43:16.161813 #23960]  INFO -- : Only interactions defined in this test run will be updated.
+I, [2022-01-30T20:43:16.161813 #23960]  INFO -- : As interactions are identified by description and provider state, pleased note that if either of these have changed, the old interactions won't be removed from the pact file until the specs are next run with :pactfile_write_mode => :overwrite.
+I, [2022-01-30T20:43:16.161813 #23960]  INFO -- : *****************************************************************************
