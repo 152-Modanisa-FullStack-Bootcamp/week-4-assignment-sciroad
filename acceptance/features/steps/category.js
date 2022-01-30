@@ -76,7 +76,7 @@ When("User hovers {string} video", async function (videoTitle) {
 });
 
 Then("User should see hovered image", async function () {
-  const selector = `[data-id="${this.hoveredVideoId}"] #hover-image`;
+  const selector = `[data-id="${this.hoveredVideoId}"] #video-image`;
 
   await checkElementVisible.call(this, selector);
 });
